@@ -23,7 +23,7 @@ def hypertension_tea(request):
 			request.session['fullname'] = fullname
 
 			#contact_message = f"{fullname} has sent you a new message."
-			contact_message = f'Hello, \n\n' \
+			contact_message = f'Hello David, \n\n' \
 				f'You have a message from {fullname} with details below. \n\n' \
 				f'Phone Number: {phone_no} \n' \
 				f'Address: {address} \n' \
