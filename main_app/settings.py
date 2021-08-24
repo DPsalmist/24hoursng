@@ -52,7 +52,6 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 
     'hypertensiontea_app',
-    'phone_field',
     'crispy_forms',
 ]
 
