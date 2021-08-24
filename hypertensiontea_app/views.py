@@ -7,7 +7,6 @@ from .forms import ContactForm
 
 # Create your views here.
 def index(request):
-	#return render (request, 'index.html')
 	return redirect('hypertension_tea')
 	
 def hypertension_tea(request):
