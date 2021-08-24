@@ -1,6 +1,7 @@
 from django.shortcuts import render, redirect
 from django.core.mail import BadHeaderError, send_mail, EmailMessage
 from django.http import HttpResponse, HttpResponseRedirect
+from django.conf import settings
 from django.contrib.sessions.models import Session
 from .forms import ContactForm
 
@@ -33,7 +34,7 @@ def hypertension_tea(request):
 			email_msg = EmailMessage(
         		subject='A New Message From 24Hours NG - Hypertension Tea', body=contact_message, 
         		from_email=contact_email,
-         		to=['thedavidonyekachi@gmail.com'],
+         		to=[settings.EMAIL_HOST_USER],
         		headers={'Reply-To': contact_email})
 			email_msg.send()
 			#messages.success (request, f'Thank you for contacting us!.')
