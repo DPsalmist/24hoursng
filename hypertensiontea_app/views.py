@@ -4,6 +4,8 @@ from django.http import HttpResponse, HttpResponseRedirect
 from django.conf import settings
 from django.contrib.sessions.models import Session
 from .forms import ContactForm
+import os
+from decouple import config
 
 # Create your views here.
 def index(request):
@@ -44,5 +46,5 @@ def hypertension_tea(request):
 
 
 def thankyou(request):
-	fullname = request.session['fullname']
-	return render(request, 'thankyou.html', {'name':fullname})
+	name = request.session['fullname']
+	return render(request, 'thankyou.html', {'name':name})
