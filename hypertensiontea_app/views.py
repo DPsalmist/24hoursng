@@ -6,7 +6,6 @@ from .forms import ContactForm
 
 # Create your views here.
 def index(request):
-	#return render (request, 'index.html')
 	return redirect('hypertension_tea')
 	
 def hypertension_tea(request):
@@ -33,7 +32,7 @@ def hypertension_tea(request):
 			email_msg = EmailMessage(
         		subject='A New Message From 24Hours NG - Hypertension Tea', body=contact_message, 
         		from_email=contact_email,
-         		to=['thedavidonyekachi@gmail.com'],
+         		to=['testdamilare@gmail.com'],
         		headers={'Reply-To': contact_email})
 			email_msg.send()
 			#messages.success (request, f'Thank you for contacting us!.')
