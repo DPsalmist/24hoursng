@@ -17,7 +17,7 @@ SECRET_KEY = os.getenv("DJANGO_SECRET_KEY", get_random_secret_key())
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['tfhoursng.herokuapp.com', '127.0.0.1']
+ALLOWED_HOSTS = ['tfhoursng.herokuapp.com', '127.0.0.1', 'tfhoursng-blm6h.ondigitalocean.app']
 
 #google app pwd = phynkjsbkoygnbnr
 # Gmail smtp
