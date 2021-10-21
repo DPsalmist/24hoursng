@@ -17,7 +17,7 @@ SECRET_KEY = os.getenv("DJANGO_SECRET_KEY", get_random_secret_key())
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['24hoursng.com', '127.0.0.1', 'twentyfourhoursstores-nshem.ondigitalocean.app/']
+ALLOWED_HOSTS = ['24hoursng.com', '127.0.0.1', 'twentyfourhoursstores-nshem.ondigitalocean.app']
 
 #google app pwd = phynkjsbkoygnbnr
 # Gmail smtp
