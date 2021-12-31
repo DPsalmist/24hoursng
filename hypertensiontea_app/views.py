@@ -35,7 +35,7 @@ def hypertension_tea(request):
 			email_msg = EmailMessage(
         		subject='A New Message From 24Hours NG - Hypertension Tea', body=contact_message, 
         		from_email=contact_email,
-			to=['testdamilare@gmail.com']
+			to=['testdamilare@gmail.com'],
          		#to=[settings.EMAIL_HOST_USER],
         		headers={'Reply-To': contact_email})
 			email_msg.send()
