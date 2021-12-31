@@ -399,7 +399,7 @@
                 <section>
                   <div class="row probootstrap-gutter0">
                     <div class="card-content">
-                      <form action="{% url 'hypertension_tea' %}" method=post>
+                      <form action="{% url 'hypertension_tea' %}" method='post'>
                                              
                         {% csrf_token %}
                         {{  form|crispy }}
