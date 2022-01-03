@@ -20,6 +20,7 @@ DEBUG = True
 ALLOWED_HOSTS = ['24hoursng.com',  'tfsalespage.herokuapp.com' ]
 
 # Mailgun/Sendinblue smtp
+'''
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_PORT='587'
 EMAIL_HOST = 'smtp-relay.sendinblue.com'
@@ -27,11 +28,11 @@ EMAIL_HOST_USER = 'sdamilare420@gmail.com'
 EMAIL_HOST_PASSWORD='3y6GngbsIcp2a9rV'
 EMAIL_USE_TLS = True
 EMAIL_USE_SSL = False
-
+'''
 
 #google app pwd = phynkjsbkoygnbnr
 # Gmail smtp
-'''
+
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_USE_TLS = True
 EMAIL_USE_SSL = False
@@ -39,7 +40,7 @@ EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_HOST_USER = 'thedavidonyekachi@gmail.com'
 EMAIL_HOST_PASSWORD = 'Redeemed01@' # windows google app pwd: 'pltoocyykkfptlms' #'vdmeszxwwvycqhqe' #google mac app pwd
 EMAIL_PORT = 587
-'''
+
 
 # Application definition
 
